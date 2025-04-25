@@ -1,0 +1,16 @@
+[
+    {
+        "name": "avalanche",
+        "type": "evm",
+        "rpc": "https://avalanche-fuji-c-chain-rpc.publicnode.com",
+        "explorer": "https://testnet.snowtrace.io",
+        "estimatedTransferFee": 21000
+    },
+    {
+        "name": "solana",
+        "type": "solana",
+        "rpc": "https://api.devnet.solana.com",
+        "explorer": "https://explorer.solana.com/?cluster=devnet",
+        "estimatedTransferFee": 5000
+    }
+]

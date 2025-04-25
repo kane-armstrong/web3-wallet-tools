@@ -1,0 +1,42 @@
+{
+  "name": "blockchain_wallet_tools",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "utilities for managing blockchain wallets",
+  "main": "main.js",
+  "scripts": {
+    "build": "npx tsc",
+    "create": "node --no-warnings ./built/main.js create",
+    "fund": "node --no-warnings ./built/main.js fund",
+    "balances": "node --no-warnings ./built/main.js balances",
+    "drain": "node --no-warnings ./built/main.js drain",
+    "lint": "eslint \"src/**/*.ts\" --ext .ts",
+    "lint:fix": "eslint \"src/**/*.ts\" --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\""
+  },
+  "keywords": [
+    "evm",
+    "ethereum",
+    "wallet",
+    "solana"
+  ],
+  "author": "Kane Armstrong",
+  "license": "MIT",
+  "devDependencies": {
+    "@eslint/js": "^9.25.1",
+    "@types/dotenv": "^6.1.1",
+    "@types/node": "^22.14.1",
+    "@typescript-eslint/eslint-plugin": "^8.31.1",
+    "@typescript-eslint/parser": "^8.31.1",
+    "eslint": "^9.25.1",
+    "eslint-config-prettier": "^10.1.2",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.31.1"
+  },
+  "dependencies": {
+    "@solana/web3.js": "^1.98.1",
+    "dotenv": "^16.5.0",
+    "ethers": "^6.13.5"
+  }
+}
